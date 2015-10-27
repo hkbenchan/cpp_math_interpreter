@@ -1,0 +1,28 @@
+ * (1) 'ceiling' -- check if there is more than one operand (cdr child) or first
+ * operand is non-double
+ * return error if true, return the ceiling value if false
+ *
+ * (2) '+' -- preset the sum as zero, add each operands (cdr child) value until 
+ * reaches a nil pointer
+ *
+ * (3) 'if' -- check the first operands is zero or not, return second cell's
+ *  value if true, return third cell's value or 1e30 (no third operand) if false
+
+ * (2) 'ceiling' function only supports one operand (i.e. error if has 2 or
+ *  more operands)
+ *
+ * (3) 'ceiling' function cannot deal with integer type operand
+ *
+ * (4) 'if' function only supports two/three operands (i.e. error if has 1 or
+ * more than 3 operands)
+ *
+ * (5) other type mismatch example
+
+ * (1) '+' function can be with any number of operands, it returns zero if there
+ *  is no operand
+ *
+ * (2) 'ceiling' function supports exactly one DOUBLE operand
+ *
+ * (3) 'if' function supports 2 to 3 operands. It first check if it is a 
+ * non-zero, return second operand if true,  return third operand (or 1e30 if
+ * there is no third operand) if false
